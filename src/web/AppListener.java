@@ -13,18 +13,12 @@ import javax.servlet.annotation.WebListener;
 @WebListener
 public class AppListener implements ServletContextListener, ServletContextAttributeListener {
 
-    /**
-     * Default constructor. 
-     */
-    public AppListener() {
-        // TODO Auto-generated constructor stub
-    }
-
 	/**
      * @see ServletContextAttributeListener#attributeAdded(ServletContextAttributeEvent)
      */
     public void attributeAdded(ServletContextAttributeEvent arg0)  { 
          // TODO Auto-generated method stub
+    	
     }
 
 	/**
