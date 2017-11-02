@@ -8,10 +8,10 @@ import java.math.BigDecimal;
  *
  */
 public class Item {
-	//编号
-	private int id;
+	
 	//流水号
 	private int num;
+	
 	//商品
 	private Product product;
 	//数量
@@ -21,12 +21,6 @@ public class Item {
 	
 	public Item() {
 		
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public int getNum() {
 		return num;

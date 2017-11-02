@@ -1,5 +1,6 @@
 package com.newer.petstore.domain;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class Account {
 	private int id;
 	private String name;
 	private String password;
-	private Address address;
+	private List<Address> addressList=new ArrayList<>();
 	
 	//	购物车
 	private Cart cart;
@@ -55,13 +56,13 @@ public class Account {
 	}
 
 
-	public Address getAddress() {
-		return address;
+	public List<Address> getAddressList() {
+		return addressList;
 	}
 
 
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setAddressList(List<Address> addressList) {
+		this.addressList = addressList;
 	}
 
 
@@ -86,7 +87,7 @@ public class Account {
 
 
 	/**
-	 * 账号的地址(内聚)
+	 * 账号的地址(内聚) 封装
 	 * @author hmn111805
 	 *
 	 */

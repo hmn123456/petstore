@@ -8,6 +8,7 @@ import java.math.BigDecimal;
  *
  */
 public class Product extends BaseEntity{
+	private int id;
 	//Ãû³Æ
 	private String title;
 	//¼Û¸ñ()
@@ -25,6 +26,14 @@ public class Product extends BaseEntity{
 	
 	public Product() {
 		
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getTitle() {

@@ -15,6 +15,7 @@ public class Category {
 	// 分类名称
 	private String title;
 	// 该分类的所有商品
+	//1:n
 	private List<Product> productList=new LinkedList<>();
 	
 	public Category() {
