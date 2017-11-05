@@ -5,43 +5,46 @@ import java.util.HashMap;
 import java.util.Set;
 
 /**
- * ¹ºÎï³µ£¨Ç¿ÊµÌå¡¢ÈõÊµÌå£©
- * @author hmn111805
+ * è´­ç‰©è½¦(å¼ºå®ä½“ã€å¼±å®ä½“)
+ * 
+ * @author wtao
  *
  */
 public class Cart {
-	//Ã»ÓĞ³Ö¾Ã»¯£¨¼ÆËã£©
-	
+
+	// æ²¡æœ‰æŒä¹…åŒ–ï¼ˆè®¡ç®—ï¼‰
 	private BigDecimal total;
 
-	//ÉÌÆ·¡¢ÊıÁ¿¡¢
-	private HashMap<Product,Integer> map=new HashMap<>();
-	
+	// å•†å“ã€æ•°é‡
+	private HashMap<Product, Integer> map = new HashMap<>();
 
 	public Cart() {
-		
 	}
+
 	/**
-	 * ¹ºÎï³µ×Ü½ğ¶î
+	 * è´­ç‰©è½¦æ€»é‡‘é¢
+	 * 
 	 * @return
 	 */
-	public BigDecimal getTolal() {
-		Set<Product> keys=map.keySet();
-		for(Product p:keys) {
-			int n=map.get(p);
-		    total = total.add(
-		    		p.getPrice().multiply(BigDecimal.valueOf(n)));
+	public BigDecimal getTotal() {
+		Set<Product> keys = map.keySet();
+		for (Product p : keys) {
+			int n = map.get(p);
+			total = total.add(p.getPrice().multiply(BigDecimal.valueOf(n)));
 		}
 		return total;
-		
 	}
-	
+
+	public int getSize() {
+		return map.size();
+	}
+
 	public HashMap<Product, Integer> getMap() {
 		return map;
 	}
+
 	public void setMap(HashMap<Product, Integer> map) {
 		this.map = map;
 	}
-	
-	
+
 }

@@ -1,62 +1,73 @@
 package com.newer.petstore.domain;
 
 import java.math.BigDecimal;
+import java.sql.Date;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-import org.apache.tomcat.jni.Address;
+import com.newer.petstore.domain.Account.Address;
 
 /**
- * ¶©µ¥
- * @author hmn111805
+ * è®¢å•
+ * 
+ * @author wtao
  *
  */
 public class Order {
-	//±àºÅ
+
+	// ç¼–å·
 	private int id;
-	//Ê±¼ä
+	// æ—¶é—´
 	private Date time;
-	
-	//ËÍ»õµØÖ·£¨Èç¹ûÎª¿Õ£¬Ê¹ÓÃÕËºÅµÄÄ¬ÈÏµØÖ·£©
+
+	// é€è´§åœ°å€ï¼ˆå¦‚æœä¸ºç©ºï¼Œä½¿ç”¨è´¦å·çš„é»˜è®¤åœ°å€ï¼‰
 	private Address address;
-	//¶©µ¥Ïî
-	private List<Item> items=new ArrayList<>();
-	//×Ü¼Û
+	// è®¢å•é¡¹
+	private List<Item> items = new ArrayList<>();
+	// æ€»ä»·
 	private BigDecimal total;
+
 	public Order() {
-		
 	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public Date getTime() {
 		return time;
 	}
+
 	public void setTime(Date time) {
 		this.time = time;
 	}
-	
+
 	public Address getAddress() {
 		return address;
 	}
+
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+
 	public List<Item> getItems() {
 		return items;
 	}
+
 	public void setItems(List<Item> items) {
 		this.items = items;
 	}
+
 	public BigDecimal getTotal() {
 		return total;
 	}
+
 	public void setTotal(BigDecimal total) {
 		this.total = total;
 	}
-	
+
 }

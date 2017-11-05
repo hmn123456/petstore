@@ -4,47 +4,61 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * ·ÖÀà£¨Ãû³Æ£¬ºÜ¶àÉÌÆ·£©
+ * åˆ†ç±»ï¼ˆåç§°ã€å¾ˆå¤šå•†å“ï¼‰
  * 
- * @author hmn111805
+ * @author wtao
  *
  */
 public class Category {
-	// ±àºÅ
+
+	// ç¼–å·
 	private int id;
-	// ·ÖÀàÃû³Æ
+
+	// åˆ†ç±»çš„åç§°
 	private String title;
-	// ¸Ã·ÖÀàµÄËùÓĞÉÌÆ·
-	//1:n
-	private List<Product> productList=new LinkedList<>();
-	
+
+	// è¯¥åˆ†ç±»çš„æ‰€æœ‰å•†å“
+	private List<Product> productList = new LinkedList<>();
+
 	public Category() {
-		
 	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getTitle() {
 		return title;
 	}
+
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
 	public List<Product> getProductList() {
 		return productList;
 	}
+
 	public void setProductList(List<Product> productList) {
 		this.productList = productList;
 	}
+
 	/**
+	 * åœ¨åˆ†ç±»ä¸­å¢åŠ æ–°çš„äº§å“
 	 * 
 	 * @param product
 	 */
 	public void addProduct(Product product) {
 		productList.add(product);
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Category [id=" + id + ", title=" + title + "]";
+	}
+
 }

@@ -3,16 +3,17 @@ package com.newer.petstore.domain;
 import java.io.Serializable;
 
 /**
- * ËùÓĞÊµÌåÀàµÄ»ùÀà£¨android/SQLite£©
- * @author hmn111805
+ * æ‰€æœ‰å®ä½“ç±»çš„åŸºç±»ï¼ˆandroid/SQLite ï¼‰
+ * 
+ * @author wtao
  *
  */
+public abstract class BaseEntity implements Serializable {
 
-public abstract class BaseEntity implements Serializable{
 	/**
-	 * Ö÷¼ü
+	 * ä¸»é”®
 	 */
-	private int id;
+	protected int id;
 
 	public int getId() {
 		return id;
@@ -21,6 +22,5 @@ public abstract class BaseEntity implements Serializable{
 	public void setId(int id) {
 		this.id = id;
 	}
-	
 
 }

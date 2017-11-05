@@ -5,99 +5,133 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * ÕËºÅ
- * @author hmn111805
+ * è´¦å·
+ * 
+ * @author wtao
  *
  */
 public class Account {
-	//	»ù±¾ĞÅÏ¢
+
+	// åŸºæœ¬ä¿¡æ¯
 	private int id;
 	private String name;
 	private String password;
-	private List<Address> addressList=new ArrayList<>();
-	
-	//	¹ºÎï³µ
+	private List<Address> addressList = new ArrayList<>();
+
+	// è´­ç‰©è½¦
 	private Cart cart;
-	//¶©µ¥
-	private List<Order> orderList=new LinkedList<>();
-	
+
+	// è®¢å•
+	private List<Order> orderList = new LinkedList<>();
+
 	public Account() {
-		
 	}
-	
-	
+
 	public int getId() {
 		return id;
 	}
-
 
 	public void setId(int id) {
 		this.id = id;
 	}
 
-
 	public String getName() {
 		return name;
 	}
-
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-
 	public String getPassword() {
 		return password;
 	}
-
 
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
-
 	public List<Address> getAddressList() {
 		return addressList;
 	}
-
 
 	public void setAddressList(List<Address> addressList) {
 		this.addressList = addressList;
 	}
 
-
 	public Cart getCart() {
 		return cart;
 	}
-
 
 	public void setCart(Cart cart) {
 		this.cart = cart;
 	}
 
-
 	public List<Order> getOrderList() {
 		return orderList;
 	}
-
 
 	public void setOrderList(List<Order> orderList) {
 		this.orderList = orderList;
 	}
 
-
 	/**
-	 * ÕËºÅµÄµØÖ·(ÄÚ¾Û) ·â×°
-	 * @author hmn111805
+	 * è´¦å·çš„åœ°å€ï¼ˆå†…èšï¼‰å°è£…
+	 * 
+	 * @author wtao
 	 *
 	 */
-	public static class Address{
+	public static class Address {
+
 		String province;
 		String city;
 		String street;
 		String name;
 		String phone;
-		
+
+		public Address() {
+		}
+
+		public String getProvince() {
+			return province;
+		}
+
+		public void setProvince(String province) {
+			this.province = province;
+		}
+
+		public String getCity() {
+			return city;
+		}
+
+		public void setCity(String city) {
+			this.city = city;
+		}
+
+		public String getStreet() {
+			return street;
+		}
+
+		public void setStreet(String street) {
+			this.street = street;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public String getPhone() {
+			return phone;
+		}
+
+		public void setPhone(String phone) {
+			this.phone = phone;
+		}
+
 	}
-	
+
 }

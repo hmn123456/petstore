@@ -3,49 +3,58 @@ package com.newer.petstore.domain;
 import java.math.BigDecimal;
 
 /**
- * ¶©µ¥Ïî
- * @author hmn111805
+ * è®¢å•é¡¹
+ * 
+ * @author wtao
  *
  */
 public class Item {
-	
-	//Á÷Ë®ºÅ
+
+	// æµæ°´å·
 	private int num;
-	
-	//ÉÌÆ·
+
+	// å•†å“
 	private Product product;
-	//ÊıÁ¿
+
+	// æ•°é‡
 	private int quantity;
-	//×Ü¼Û
+
+	// æ€»ä»·
 	private BigDecimal total;
-	
+
 	public Item() {
-		
 	}
+
 	public int getNum() {
 		return num;
 	}
+
 	public void setNum(int num) {
 		this.num = num;
 	}
+
 	public Product getProduct() {
 		return product;
 	}
+
 	public void setProduct(Product product) {
 		this.product = product;
 	}
+
 	public int getQuantity() {
 		return quantity;
 	}
+
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+
 	public BigDecimal getTotal() {
 		return total;
 	}
+
 	public void setTotal(BigDecimal total) {
 		this.total = total;
 	}
-	
-	
+
 }

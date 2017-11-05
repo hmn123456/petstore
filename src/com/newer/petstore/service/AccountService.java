@@ -1,11 +1,18 @@
 package com.newer.petstore.service;
+
 /**
- * 账号的业务逻辑（用例）
- * @author hmn111805
+ * 璐﹀彿鐨勪笟鍔￠�昏緫锛堢敤渚嬶級
+ * 
+ * @author wtao
  *
  */
 public class AccountService {
-	//	修改个人信息
-	//  登录
-	//  注册
+
+	// 淇敼涓汉淇℃伅
+	
+	// 鐧诲綍
+	
+	// 娉ㄥ唽
+	
 }
+

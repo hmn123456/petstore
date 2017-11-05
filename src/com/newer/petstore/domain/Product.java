@@ -3,29 +3,38 @@ package com.newer.petstore.domain;
 import java.math.BigDecimal;
 
 /**
- * ÉÌÆ·
- * @author hmn111805
+ * å•†å“ (Java Beans)
+ * 
+ * @author wtao
  *
  */
-public class Product extends BaseEntity{
+public class Product {
+
+	// ç¼–å·
 	private int id;
-	//Ãû³Æ
+	// åç§°
 	private String title;
-	//¼Û¸ñ()
+
+	// ä»·æ ¼ï¼ˆï¼‰
 	private BigDecimal price;
-	//ÃèÊöĞÅÏ¢
+
+	// æè¿°ä¿¡æ¯
 	private String info;
-	//¿â´æ
+
+	// åº“å­˜
 	private int quantity;
-	//ÏúÁ¿
+
+	// é”€é‡
 	private int salesNum;
-	//Í¼Æ¬´æ´¢Â·¾¶
+
+	// å›¾ç‰‡å­˜å‚¨è·¯å¾„
 	private String picPath;
-	//Àà±ğ(¿ÉÑ¡)
-	private Category category;
-	
+
 	public Product() {
-		
+	}
+
+	public String getTitle() {
+		return title;
 	}
 
 	public int getId() {
@@ -34,10 +43,6 @@ public class Product extends BaseEntity{
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public String getTitle() {
-		return title;
 	}
 
 	public void setTitle(String title) {
@@ -84,15 +89,12 @@ public class Product extends BaseEntity{
 		this.picPath = picPath;
 	}
 
-	public Category getCategory() {
-		return category;
-	}
+	// public Category getCategory() {
+	// return category;
+	// }
+	//
+	// public void setCategory(Category category) {
+	// this.category = category;
+	// }
 
-	public void setCategory(Category category) {
-		this.category = category;
-	}
-	
-	
-	
-	
 }
