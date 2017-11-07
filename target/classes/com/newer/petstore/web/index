@@ -1,0 +1,20 @@
+作用域
+HashMap<String,Object>
+	jsp/容器
+	application	ServletContext  1份
+	session		HttpSession		n份（用户）
+	request		HttpServletRequest	一次
+	page		一个
+	
+	setAttribute("key",object)
+	Object o=getAttribute("key")
+	
+	setAtt("a","x")
+	setAtt("a","y")
+	
+	removeAttr
+	
+	<%= n %>
+	EL 表达式语言
+	${ n }
+		从作用域获得属性n;
